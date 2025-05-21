@@ -1,23 +1,24 @@
 import About from "./components/About";
-import BackToTop from "./components/BackToTop";
 import Footer from "./components/Footer";
-import HeaderOne from "./components/HeaderOne";
-import HeaderTwo from "./components/HeaderTwo";
+import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
-import Service from "./components/Services";
-import ThemeToggle from "./components/ThemeToggle";
+import Services from "./components/Services";
+import TopBar from "./components/TopBar";
+import BottomNav from "./components/BottomNav";
+import Testimonials from "./components/Testimonials";
+
 
 export default function Home() {
   return (
     <>
-      <HeaderOne />
-      <HeaderTwo />
-      <ThemeToggle />
+      <TopBar />
+      <Header />
       <HeroSection />
       <About />
-      <Service />
+      <Services/>
+      <Testimonials />
       <Footer />
-      <BackToTop />
+      <BottomNav />
     </>
   );
 }

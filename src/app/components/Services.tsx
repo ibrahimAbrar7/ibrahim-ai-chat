@@ -1,85 +1,86 @@
+"use client";
 import React from "react";
-import Image from "next/image";
+import {
+  FaBolt,
+  FaFireExtinguisher,
+  FaShieldAlt,
+  FaTools,
+  FaHardHat,
+  FaPlug,
+} from "react-icons/fa";
 
-const services = [
-  {
-    title: "Large Format Printing, Posters & Fine Art Prints",
-    image: "/one.png",
-  },
-  {
-    title: "Banners Same Day & Signs",
-    image: "/two.png",
-  },
-  {
-    title: "Window Adhesive Decals/ Wall Stickers",
-    image: "/three.png",
-  },
-  {
-    title: "Brochures, Catalogues and Booklets Printing",
-    image: "/four.png",
-  },
-  {
-    title: "Postcards, Wedding & Custom Greeting Cards",
-    image: "/five.png",
-  },
-  {
-    title: "Business Cards",
-    image: "/six.png",
-  },
-  {
-    title: "Stickers, Labels and Decals",
-    image: "/seven.png",
-  },
-  {
-    title: "Offset Printing and Other Printing",
-    image: "/eight.png",
-  },
-  {
-    title: "Custom Packaging Solutions",
-    image: "/nine.png",
-  },
-  {
-    title: "Photo Printing & Restoration",
-    image: "/ten.png",
-  },
-  {
-    title: "Promotional Products",
-    image: "/eleven.png",
-  },
-  {
-    title: "Promotional Products",
-    image: "/twe.png",
-  },
-];
-
-const Service = () => {
+const Services: React.FC = () => {
   return (
-    <section className="pb-16 pt-12 px-4 md:px-8 bg-white dark:bg-gray-800">
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-2xl md:text-3xl font-bold mb-10">
-          SERVICES WE PROVIDE
+    <div className="w-full py-16 bg-gray-100">
+      <div className="max-w-7xl mx-auto px-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-[#0a1d44] mb-12">
+          Our Services
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
-          {services.map((service, index) => (
-            <div key={index} className="flex flex-col items-center text-center">
-              <div className="w-full h-[200px] relative">
-                <Image
-                  src={service.image}
-                  alt={service.title}
-                  layout="fill"
-                  className="rounded shadow object-contain" // Changed to 'object-contain'
-                />
-              </div>
-              <p className="mt-4 text-md font-medium text-gray-800 dark:text-gray-200 break-words max-w-[60%] sm:max-w-full">
-                {service.title}
-              </p>
-            </div>
-          ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Electrical Installations */}
+          <div className="w-full p-6 bg-gradient-to-r from-[#0a1d44] via-[#1c3a6b] to-[#8b0000] hover:from-[#8b0000] hover:via-[#1c3a6b] hover:to-[#0a1d44] text-white text-center rounded-lg shadow-md transition-all duration-500">
+            <FaBolt className="w-16 h-16 mx-auto mb-4" />
+            <h3 className="text-xl font-semibold">Electrical Installations</h3>
+            <p className="mt-4 text-lg">
+              Safe and code-compliant electrical systems for residential,
+              commercial, and industrial needs.
+            </p>
+          </div>
+
+          {/* Fire Alarm Systems */}
+          <div className="w-full p-6 bg-gradient-to-r from-[#0a1d44] via-[#1c3a6b] to-[#8b0000] hover:from-[#8b0000] hover:via-[#1c3a6b] hover:to-[#0a1d44] text-white text-center rounded-lg shadow-md transition-all duration-500">
+            <FaFireExtinguisher className="w-16 h-16 mx-auto mb-4" />
+            <h3 className="text-xl font-semibold">Fire Alarm Systems</h3>
+            <p className="mt-4 text-lg">
+              Advanced fire detection and alarm solutions ensuring life and
+              property safety.
+            </p>
+          </div>
+
+          {/* Security Systems */}
+          <div className="w-full p-6 bg-gradient-to-r from-[#0a1d44] via-[#1c3a6b] to-[#8b0000] hover:from-[#8b0000] hover:via-[#1c3a6b] hover:to-[#0a1d44] text-white text-center rounded-lg shadow-md transition-all duration-500">
+            <FaShieldAlt className="w-16 h-16 mx-auto mb-4" />
+            <h3 className="text-xl font-semibold">Security Systems</h3>
+            <p className="mt-4 text-lg">
+              Customized CCTV and access control systems to protect your space
+              24/7.
+            </p>
+          </div>
+
+          {/* Maintenance & Repairs */}
+          <div className="w-full p-6 bg-gradient-to-r from-[#0a1d44] via-[#1c3a6b] to-[#8b0000] hover:from-[#8b0000] hover:via-[#1c3a6b] hover:to-[#0a1d44] text-white text-center rounded-lg shadow-md transition-all duration-500">
+            <FaTools className="w-16 h-16 mx-auto mb-4" />
+            <h3 className="text-xl font-semibold">Maintenance & Repairs</h3>
+            <p className="mt-4 text-lg">
+              Reliable and timely maintenance to prevent issues and reduce
+              downtime.
+            </p>
+          </div>
+
+          {/* Safety Compliance Audits */}
+          <div className="w-full p-6 bg-gradient-to-r from-[#0a1d44] via-[#1c3a6b] to-[#8b0000] hover:from-[#8b0000] hover:via-[#1c3a6b] hover:to-[#0a1d44] text-white text-center rounded-lg shadow-md transition-all duration-500">
+            <FaHardHat className="w-16 h-16 mx-auto mb-4" />
+            <h3 className="text-xl font-semibold">Safety Compliance Audits</h3>
+            <p className="mt-4 text-lg">
+              Thorough inspections to meet fire and electrical safety codes and
+              standards.
+            </p>
+          </div>
+
+          {/* Generator & Backup Systems */}
+          <div className="w-full p-6 bg-gradient-to-r from-[#0a1d44] via-[#1c3a6b] to-[#8b0000] hover:from-[#8b0000] hover:via-[#1c3a6b] hover:to-[#0a1d44] text-white text-center rounded-lg shadow-md transition-all duration-500">
+            <FaPlug className="w-16 h-16 mx-auto mb-4" />
+            <h3 className="text-xl font-semibold">Backup Power Solutions</h3>
+            <p className="mt-4 text-lg">
+              Generator and UPS installations to ensure uninterrupted power
+              supply.
+            </p>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
-export default Service;
+export default Services;

@@ -1,49 +1,54 @@
+"use client";
+import Link from "next/link"; // Import Link from next/link for internal navigation
 import React from "react";
 import Image from "next/image";
 
-const About = () => {
+const About: React.FC = () => {
   return (
-    <section className="relative py-16 px-4 md:px-8 bg-white dark:bg-[#0f172a] overflow-hidden">
-      <div className="absolute top-0 left-0 z-0 max-w-[60px] md:max-w-[100px] lg:max-w-[200px]">
-        <Image
-          src="/bg-left.png"
-          alt="Left Blocks"
-          width={200}
-          height={180}
-          className="w-full h-auto"
-        />
-      </div>
-      <div className="absolute top-0 right-0 z-0 max-w-[60px] md:max-w-[100px] lg:max-w-[200px]">
-        <Image
-          src="/bg-right.png"
-          alt="Right Blocks"
-          width={200}
-          height={180}
-          className="w-full h-auto"
-        />
-      </div>
+    <section className="relative bg-white py-16 lg:py-12 overflow-x-hidden">
+      <div className="container mx-auto px-6 lg:px-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Text Section */}
+          <div className="space-y-6 lg:pr-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0a1d44] leading-tight">
+              <span className="text-[#d80000]">Espros</span> Electrical & Safety
+              Solutions
+            </h2>
+            <p className="text-md md:text-lg text-gray-600 leading-relaxed">
+              With years of expertise in electrical, fire, and safety systems,
+              Espros is committed to delivering reliable, code-compliant
+              solutions for residential, commercial, and industrial spaces.
+            </p>
+            <p className="text-gray-600 leading-relaxed">
+              Our team of certified professionals ensures precision, safety, and
+              performance at every stage. From fire alarm installations to
+              complete electrical system upgrades, we’re your trusted partner in
+              protection and power.
+            </p>
+            <Link
+              href="/services"
+              className="inline-block px-6 py-3 bg-[#d80000] text-white text-sm font-semibold rounded-md shadow-md hover:bg-blue-700 transition-all duration-300"
+            >
+              Learn More
+            </Link>
+          </div>
 
-      <div className="relative z-10 max-w-4xl mx-auto text-center">
-        <h2 className="text-xl font-medium text-gray-900 dark:text-gray-200">Welcome to</h2>
-        <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 dark:text-gray-200">
-          SWIFT COPY PRINTING
-        </h1>
-
-        <p className="text-gray-500 dark:text-gray-200 text-xl leading-loose flex justify-center mb-6">
-          We pride ourselves on being one of the most experienced and
-          professional digital printers in Mid-Manhattan New York. Since 1990 we
-          have been utilizing the latest technology, processing, and printing
-          materials to make your vision a reality. We provide a number of
-          services including offset printing, digital printing, large format
-          printing, marketing graphics, banners, business forms, all with a
-          comprehensive range of print finishing options.
-        </p>
-
-        <p className="text-red-700 dark:text-red-400 italic text-lg">
-          As one of the city’s most reliable and quick turnover printers,
-          <br />
-          we also offer rush & same-day services
-        </p>
+          {/* Image Section */}
+          <div className="relative">
+            <div className="relative overflow-hidden rounded-lg shadow-lg">
+              <Image
+                src="/electric.jpg"
+                alt="About Hero"
+                width={600}
+                height={400}
+                className="w-full h-auto rounded-lg transform hover:scale-105 transition-transform duration-500 ease-in-out"
+              />
+            </div>
+            {/* Decorative Circles */}
+            <div className="absolute top-0 -left-8 w-32 h-32 bg-blue-600 opacity-30 rounded-full"></div>
+            <div className="absolute bottom-0 -right-8 w-24 h-24 bg-blue-600 opacity-30 rounded-full"></div>
+          </div>
+        </div>
       </div>
     </section>
   );
