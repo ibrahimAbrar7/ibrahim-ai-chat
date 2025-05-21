@@ -37,7 +37,7 @@ export default function Header() {
         {/* Mobile: Call button */}
         <a
           href="tel:+13019703007"
-          className="lg:hidden text-white bg-[#d80000] p-2 rounded z-10"
+          className="lg:hidden text-white bg-[#d5a32d] p-2 rounded z-10"
           aria-label="Call now"
         >
           <FaPhoneAlt className="h-5 w-5" />
@@ -50,9 +50,9 @@ export default function Header() {
             className="text-xl font-semibold text-gray-800 flex items-center hover:underline"
           >
             <FaPhoneAlt className="h-5 w-5 mr-2 text-black" />
-            <span>301-970-3007</span>
+            <span>650-770-4101</span>
           </Link>
-          <button className="bg-[#d80000] text-white px-4 py-2 text-sm font-semibold rounded hover:bg-red-700">
+          <button className="bg-[#d5a32d] text-white px-4 py-2 text-sm font-semibold rounded hover:bg-red-700">
             Request A Quote
           </button>
         </div>

@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function BottomNav() {
   return (
-    <div className="fixed bottom-0 left-0 w-full bg-[#d80000] pb-1 text-white z-40 shadow-lg md:hidden">
+    <div className="fixed bottom-0 left-0 w-full bg-[#d5a32d] pb-1 text-white z-40 shadow-lg md:hidden">
       <div className="flex justify-around items-center py-2">
        
         <Link href="mailto:info@irevive.com" className="flex flex-col items-center text-sm">
