@@ -22,7 +22,7 @@ export default function Header() {
         <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:static lg:translate-x-0 lg:translate-y-0">
           <Link href="/">
             <Image
-              src="/logo-new.jfif"
+              src="/logo-new.png"
               alt="Company Logo"
               width={130}
               height={40}
@@ -64,7 +64,7 @@ export default function Header() {
   <div className="absolute right-1/2 md:mr-55 xl:mr-85 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
     <Link href="/">
       <Image
-        src="/logo-new.jfif"
+        src="/logo-new.png"
         alt="Company Logo"
         width={190}
         height={50}
