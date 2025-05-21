@@ -8,11 +8,11 @@ export default function BottomNav() {
     <div className="fixed bottom-0 left-0 w-full bg-[#d5a32d] pb-1 text-white z-40 shadow-lg md:hidden">
       <div className="flex justify-around items-center py-2">
        
-        <Link href="mailto:info@irevive.com" className="flex flex-col items-center text-sm">
+        <Link href="mailto:info@esfpros.com" className="flex flex-col items-center text-sm">
           <Mail size={20} />
           <span>Email</span>
         </Link>
-         <Link href="tel:8009944335" className="flex flex-col items-center text-sm">
+         <Link href="tel:6507704101" className="flex flex-col items-center text-sm">
           <Mail size={20} />
           <span>Request Quote</span>
         </Link>
