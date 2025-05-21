@@ -60,7 +60,7 @@ export default function HeroSection() {
         {/* Right: Contact Form */}
         <div className="bg-white rounded shadow-lg p-6 text-gray-900 w-full max-w-xl mx-auto">
           <div className="flex flex-col items-center mb-4">
-            <Image src="/logo-new.jfif" alt="Logo" width={150} height={50} />
+            <Image src="/logo-new.png" alt="Logo" width={150} height={50} />
             <h2 className="text-2xl font-semibold mt-2">Let us help.</h2>
           </div>
 
