@@ -1,10 +1,7 @@
 "use client";
 import { useState } from "react";
 import About from "./components/About";
-import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
-import Services from "./components/Services";
-import Testimonials from "./components/Testimonials";
 import Link from "next/link";
 
 
@@ -110,9 +107,6 @@ export default function Home() {
       </div>
       <HeroSection />
       <About />
-      <Services/>
-      <Testimonials />
-      <Footer />
     </>
   );
 }
