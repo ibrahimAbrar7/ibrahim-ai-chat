@@ -21,7 +21,7 @@ const About: React.FC = () => {
 </p>
 
             <Link
-              href="/services"
+              href="/chatboot"
               className="inline-block px-6 py-3 bg-pink-500 text-white text-sm font-semibold rounded-md shadow-md hover:bg-blue-700 transition-all duration-300"
             >
               Learn More
