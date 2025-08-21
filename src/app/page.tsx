@@ -31,7 +31,7 @@ export default function Home() {
               <path d="M15 13v2" />
               <path d="M9 13v2" />
             </svg>
-            <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-pink-500 dark:from-blue-400 dark:to-pink-400">
+            <span className="text-xl md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-pink-500 dark:from-blue-400 dark:to-pink-400">
               AI Career Guide
             </span>
           </div>
