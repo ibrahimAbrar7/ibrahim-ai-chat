@@ -10,15 +10,6 @@ export default function Home() {
   
   return (
     <>
-     "use client";
-
-import { useState } from "react";
-import Link from "next/link";
-
-export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  return (
     <header className="relative z-50 bg-transparent">
       <div className="container mx-auto px-6 py-6 flex items-center justify-between">
         {/* Logo */}
