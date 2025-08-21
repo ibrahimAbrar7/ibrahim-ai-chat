@@ -37,7 +37,7 @@ export default function Home() {
           </div>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="flex items-center space-x-8">
             <Link
               href="/chatboot"
               className="px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-pink-500 rounded-lg hover:opacity-90 transition-opacity"
@@ -48,7 +48,7 @@ export default function Home() {
 
           {/* Mobile Menu Toggle */}
           <button
-            className="md:hidden p-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+            className="hidden p-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             {menuOpen ? (
