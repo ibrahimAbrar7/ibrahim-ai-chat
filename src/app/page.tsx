@@ -40,7 +40,7 @@ export default function Home() {
           <nav className="flex items-center space-x-8">
             <Link
               href="/chatboot"
-              className="px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-pink-500 rounded-lg hover:opacity-90 transition-opacity"
+              className="px-2 md:px-4 py-1 md:py-2 text-xs md:text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-pink-500 rounded-lg hover:opacity-90 transition-opacity"
             >
               Get Started
             </Link>
