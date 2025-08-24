@@ -39,7 +39,7 @@ export default function CareerFormChatbot() {
       });
 
       const data = await res.json();
-      setReply(data.reply || 'No response');
+      setReply(data.reply || 'Slow Internet!!');
 
       // Scroll to the reply div after the reply is set
       setTimeout(() => {
