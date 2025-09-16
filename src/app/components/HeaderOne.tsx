@@ -6,7 +6,7 @@ import { MdLocationOn, MdEmail } from "react-icons/md";
 
 export default function HeaderOne() {
   return (
-    <div className="w-full bg-white dark:bg-[#0f172a] shadow-sm px-4 py-4 border-b border-gray-200 dark:border-gray-700 transition-colors duration-300">
+    <div className="w-full bg-[#0f172a] shadow-sm px-4 py-4 border-b border-gray-200 dark:border-gray-700 transition-colors duration-300">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-4">
         {/* Logo */}
         <div className="flex items-center gap-2">
@@ -40,11 +40,11 @@ export default function HeaderOne() {
             {/* Phone & Email */}
             <div className="flex flex-col gap-1 items-start px-2">
               <div className="flex items-center gap-2">
-                <FaPhoneAlt className="text-gray-800 dark:text-gray-300 text-lg" />
+                <FaPhoneAlt className=" text-gray-300 text-lg" />
                 <span className="text-lg">212-683-4900</span>
               </div>
               <div className="flex items-center gap-2">
-                <MdEmail className="text-gray-800 dark:text-gray-300 text-lg" />
+                <MdEmail className="text-gray-300 text-lg" />
                 <span className="text-lg">info@swiftcopy.com</span>
               </div>
             </div>
@@ -56,18 +56,18 @@ export default function HeaderOne() {
             {/* Social Media */}
             <div className="flex flex-col items-start gap-1 px-2">
               <div className="flex items-center gap-2">
-                <FaSquareFacebook className="text-blue-600 dark:text-blue-400 text-xl" />
-                <span className="text-md text-gray-800 dark:text-gray-200">Facebook</span>
+                <FaSquareFacebook className=" text-blue-400 text-xl" />
+                <span className="text-md text-gray-200">Facebook</span>
               </div>
               <div className="flex items-center gap-2">
-                <FaInstagramSquare className="text-pink-600 dark:text-pink-400 text-xl" />
-                <span className="text-md text-gray-800 dark:text-gray-200">SwiftCopy</span>
+                <FaInstagramSquare className=" text-pink-400 text-xl" />
+                <span className="text-md text-gray-200">SwiftCopy</span>
               </div>
             </div>
 
             {/* Quote Button */}
             <div>
-              <button className="bg-red-600 dark:bg-red-500 hover:bg-red-500 dark:hover:bg-red-400 text-white text-sm font-semibold px-4 py-2 rounded shadow-md transition">
+              <button className=" bg-red-500 hover:bg-red-400 text-white text-sm font-semibold px-4 py-2 rounded shadow-md transition">
                 GET A QUOTE
               </button>
             </div>
