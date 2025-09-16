@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Products = () => {
   return (
-    <section className="relative py-16 px-4 md:px-8 bg-white dark:bg-gray-800 overflow-hidden">
+    <section className="relative py-16 px-4 md:px-8 bg-gray-800 overflow-hidden">
       {/* Corner Images */}
       <div className="absolute top-0 left-0 z-0 max-w-[120px] md:max-w-[200px]">
         <Image
@@ -26,12 +26,12 @@ const Products = () => {
 
       {/* Main Content */}
       <div className="relative z-10 max-w-6xl mx-auto text-center">
-        <h1 className="text-2xl md:text-5xl font-extrabold text-gray-900 dark:text-gray-200 mb-2">
+        <h1 className="text-2xl md:text-5xl font-extrabold text-gray-200 mb-2">
           Products
         </h1>
-        <p className="text-gray-600 dark:text-gray-200 mb-10">List</p>
+        <p className=" text-gray-200 mb-10">List</p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-left text-gray-800 dark:text-gray-200">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-left text-gray-200">
           {/* Column 1 */}
           <ul className="space-y-2">
             <li>Adhesive Vinyl</li>
