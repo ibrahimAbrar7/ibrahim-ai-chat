@@ -8,7 +8,7 @@ const HeaderTwo: React.FC = () => {
   const toggleMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
   return (
-    <header className="bg-zinc-800 dark:bg-gray-800 p-4 sticky top-0 z-50 border-b-1 dark:border-gray-400">
+    <header className=" bg-gray-800 p-4 sticky top-0 z-50 border-gray-400">
       <nav>
         <div className="hidden lg:flex justify-center space-x-6">
           <ul className="flex">
