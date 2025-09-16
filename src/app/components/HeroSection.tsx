@@ -17,9 +17,9 @@ export default function HeroSection() {
       {/* Overlay */}
       <div className="absolute inset-0"></div>
       <div className="absolute inset-0 -z-10">
-        <div className="absolute top-40 left-20 w-72 h-72 bg-blue-400 dark:bg-blue-600/60 blur-[100px] rounded-full opacity-50"></div>
-        <div className="absolute top-64 right-16 w-96 h-96 bg-pink-400 dark:bg-pink-600/60 blur-[150px] rounded-full opacity-50"></div>
-        <div className="absolute bottom-0 right-2/4 w-80 h-80 bg-yellow-400 dark:bg-yellow-600/60 blur-[130px] rounded-full opacity-50"></div>
+        <div className="absolute top-40 left-20 w-72 h-72 bg-blue-600/60 blur-[100px] rounded-full opacity-50"></div>
+        <div className="absolute top-64 right-16 w-96 h-96 bg-pink-600/60 blur-[150px] rounded-full opacity-50"></div>
+        <div className="absolute bottom-0 right-2/4 w-80 h-80 bg-yellow-600/60 blur-[130px] rounded-full opacity-50"></div>
       </div>
 
       {/* Content */}
